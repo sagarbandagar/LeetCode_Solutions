@@ -1,9 +1,12 @@
 class Solution:
     def move_zero(self , arr):
+        
+        #iterate over the array
         for item in arr:
+            #check if the item is 0
             if item == 0:
-                arr.remove(item)
-                arr.append(item)
+                arr.remove(item)     #remove it
+                arr.append(item)     #add it to the end 
         return arr 
     
 solution = Solution()
